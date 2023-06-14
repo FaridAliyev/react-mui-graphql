@@ -16,7 +16,7 @@ const Root = styled('div')(({ theme }: { theme: Theme }) => ({
 }));
 
 const Page = forwardRef<HTMLDivElement, PageProps>(({ children, title = '', ...props }, ref) => {
-    const pageTitle = title ? `${title}` : 'Falkon';
+    const pageTitle = title ? `${title}` : 'Page';
 
     return (
         <Root ref={ref} {...props}>
